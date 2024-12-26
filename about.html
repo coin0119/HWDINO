@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於恐龍</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+   <style>
+        #hero {
+            background-image: url('head.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        #hero p {
+            font-size: 1.5rem;
+        }
+        .dino-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .card-text {
+            text-align: justify;
+        }
+        
+        #hero h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+        }
+
+        #hero p {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">🦕</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">恐龍介紹</a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">關於恐龍 <span class="sr-only">(current)</span></a>
+            </li>
+           
+            
+          </ul>
+      
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+           </nav>
+   
+    <section id="hero">
+        <div>
+            <h1>探索恐龍的世界</h1>
+            <p>了解史前巨獸的生活與演化歷程</p>
+        </div>
+    </section>
+
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="lotdinos.jpg" alt="恐龍圖片" class="dino-image">
+            </div>
+            <div class="col-md-6">
+                <h2>什麼是恐龍？</h2>
+                <p>恐龍（英語：dinosaur）是蜥形綱鳥頸主龍類恐龍總目（學名：Dinosauria）下的所有動物的統稱，是繁盛於顯生宙中生代的一大類陸生和半水生生物，也是大眾文化中最著名的古生物類群。</p>
+                <p>恐龍最早出現在2億3千萬年前的三疊紀中期，在卡尼期洪積事件後出現大規模的演化輻射，在三疊紀末滅絕事件後演替取代了偽鱷類成為優勢物種，並與同屬鳥頸類的翼龍一起在之後的侏羅紀和白堊紀支配全球陸地生態系統長達1億4千萬年之久，直到其在至今6千6百萬年前的白堊紀—古近紀滅絕事件中集體滅絕為止。</p>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="year.jpg" alt="恐龍圖片" class="dino-image">
+                </div>
+                <div class="col-md-6">
+                    <h2>恐龍的演化</h2>
+                    <p>三疊紀 (Triassic)：早期的小型恐龍生活在簡單的植被環境中，剛開始適應陸地生態。</p>
+                    <p>侏羅紀 (Jurassic)：大型恐龍如腕龍和劍龍在茂密的森林中活動，此時是恐龍多樣化的高峰。</p>
+                    <p>白堊紀 (Cretaceous)：著名的恐龍如暴龍和三角龍，伴隨著開花植物和早期的鳥類出現。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          
+          const currentPage = window.location.pathname;
+      
+          
+          const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      
+          
+          navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+              link.parentElement.classList.add("active");
+            } else {
+              link.parentElement.classList.remove("active");
+            }
+          });
+        });
+      </script>
+      
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 🦕🦖🦕🦖🦕🦖</p>
+    </footer>
+
+    
+ 

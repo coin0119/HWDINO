@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恐龍恐龍</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <style>
+         
+        #hero {
+            background-image: url('head.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        #hero p {
+            font-size: 1.5rem;
+        }
+        .dino-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .card-text {
+            text-align: justify;
+        }
+        
+        #hero h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+        }
+
+        #hero p {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+        }
+        .container {
+            margin-top: 50px;
+        }
+       
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin-bottom: 20px;
+            height: 100%; 
+        }
+        .card img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain; 
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+
+    
+
+  </head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">🦕</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="index.html">恐龍介紹</a></li>
+        <li class="nav-item active">
+        <a class="nav-link" href="about.html">關於恐龍 <span class="sr-only">(current)</span></a></li>
+    
+      
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+     </nav>
+
+     <section id="hero">
+        <div>
+            <h1>探索恐龍的世界</h1>
+            <p>了解史前巨獸的生活與演化歷程</p>
+        </div>
+    </section>
+
+
+
+    <div class="container mt-4">
+        
+        <section>
+            <h2>三疊紀</h2>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="b.jpg" class="card-img-top" alt="板龍">
+                        <div class="card-body">
+                            <h5 class="card-title">板龍(Plateosaurus)
+                            </h5>
+                            <p class="card-text">大型草食性恐龍，生活於三疊紀晚期，以堅韌的植物為食。其前肢短小但靈活，後肢強壯，能支撐半直立的姿勢，用長頸部輕鬆觸及較高處的植被。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="hajime.jpg" class="card-img-top" alt="始盜龍">
+                        <div class="card-body">
+                            <h5 class="card-title">始盜龍(Eoraptor)</h5>
+                            <p class="card-text">三疊紀晚期的小型肉食性恐龍，以其敏捷的行動和銳利的牙齒聞名。牠擁有輕盈的體型和修長的尾巴，適合快速奔跑和捕獵小型動物。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="i.jpg" class="card-img-top" alt="腔骨龍">
+                        <div class="card-body">
+                            <h5 class="card-title">艾雷拉龍(Herrerasaurus)</h5>
+                            <p class="card-text">中型肉食性恐龍，生活於三疊紀晚期，是早期恐龍中的代表物種之一。牠具有修長的頭部與鋒利的牙齒，適合撕裂獵物。前肢短小但有力，配有銳利的爪子，後肢強壯，善於快速奔跑與追捕小型動物，是當時的靈活掠食者。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        <section>
+            <h2>侏羅紀</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="original.png" class="card-img-top" alt="腕龍">
+                        <div class="card-body">
+                            <h5 class="card-title">腕龍(Brachiosaurus)</h5>
+                            <p class="card-text">大型草食性恐龍，侏羅紀時期的代表物種。以其極長的頸部和前肢而聞名，能輕鬆觸及高大的樹冠，攝取當時茂密森林中的樹葉與果實。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="j.jpg" class="card-img-top" alt="劍龍">
+                        <div class="card-body">
+                            <h5 class="card-title">劍龍(Stegosaurus)</h5>
+                            <p class="card-text">以背部的大型骨板與尾部的尖刺聞名，是侏羅紀的草食性恐龍。骨板可能用於調節體溫或威嚇掠食者，而尾刺則是強大的防禦武器。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="yee.png" class="card-img-top" alt="異特龍">
+                        <div class="card-body">
+                            <h5 class="card-title">異特龍(Allosaurus)</h5>
+                            <p class="card-text">侏羅紀晚期的掠食性恐龍，體型巨大且擁有鋒利的牙齒和強健的下顎。異特龍行動靈活，常以伏擊方式捕食其他恐龍，是當時的頂級掠食者之一。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+      
+        <section>
+            <h2>白堊紀</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="pic1.png" class="card-img-top" alt="暴龍">
+                        <div class="card-body">
+                            <h5 class="card-title">暴龍(Tyrannosaurus)</h5>
+                            <p class="card-text">白堊紀晚期的恐龍之王，以強壯的後肢和巨大的顎部而聞名。暴龍擁有驚人的咬合力，能輕易擊碎骨頭，是地球史上最具威脅的掠食者之一。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="pic3.jpg" class="card-img-top" alt="三角龍">
+                        <div class="card-body">
+                            <h5 class="card-title">三角龍(Triceratops)</h5>
+                            <p class="card-text">大型草食性恐龍，生活於白堊紀晚期。以三根巨大的角和堅硬的頭盾聞名，不僅用來防禦掠食者，還可能用於族群間的競爭或展示。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="gogo.png" class="card-img-top" alt="迅猛龍">
+                        <div class="card-body">
+                            <h5 class="card-title">迅猛龍(Velociraptor)</h5>
+                            <p class="card-text">小型但兇猛的肉食性恐龍，以其靈活的體態和鋒利的鐮刀狀爪聞名。迅猛龍善於快速移動並協同作戰，擅長捕獵比自身大的獵物。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      
+
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+         
+          const currentPage = window.location.pathname;
+      
+        
+          const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      
+         
+          navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+              link.parentElement.classList.add("active");
+            } else {
+              link.parentElement.classList.remove("active");
+            }
+          });
+        });
+      </script>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 🦕🦖🦕🦖🦕🦖</p>
+</footer>
+</body>
+
+</html>
